@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+transformers>=4.30.0
+sentence-transformers
+faiss-cpu
+langchain
+pydantic
+python-multipart
+streamlit
+pypdf
+reportlab
+torch  # CPU version OK; if you have CUDA, install the proper torch
+accelerate
