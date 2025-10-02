@@ -7,6 +7,9 @@ import uuid
 import os
 
 app = FastAPI(title="Medical Appointment Chatbot (RAG Demo)")
+@app.get("/")
+def read_root():
+    return {"message": "Hello! Your API is working 🚀"}
 # Ensure ingest.py has been run
 rag = MedicalRAG()
 
